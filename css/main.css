@@ -394,6 +394,10 @@ a:not([href]):not([tabindex]):hover {
   position: relative;
   background: #f2f2f2;
 }
+#licensing {
+  position: relative;
+  background: #f2f2f2;
+}
 /* ==========================================================================
    Features Section Style
    ========================================================================== */
@@ -427,6 +431,7 @@ a:not([href]):not([tabindex]):hover {
 }
 #features .box-item {
   padding-bottom: 30px;
+  align-content: center;
 }
 #features .box-item .icon {
   border: 1px solid #4676fa;
