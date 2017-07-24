@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,600');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
 body {
   font-family: 'Lato', sans-serif;
   color: #333;
@@ -83,7 +85,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Didact Gothic','Questrial', sans-serif;
   font-size: 40px;
   font-weight: 100;
   letter-spacing: 1px;
@@ -129,7 +131,7 @@ a:not([href]):not([tabindex]):hover {
 .section-header .section-subtitle {
   margin-top: 15px;
   color: #333;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
 }
 .section-header .lines {
@@ -158,7 +160,8 @@ a:not([href]):not([tabindex]):hover {
   background-color: #fff;
 }
 .logo-menu a {
-  font-size: 20px;
+  font-family: 'Didact Gothic','Questrial', sans-serif;
+  font-size: 36px;
   color: #fff;
 }
 .menu-bg {
@@ -315,7 +318,7 @@ a:not([href]):not([tabindex]):hover {
 #video-area .contents h1 {
   color: #fff;
   font-size: 50px;
-  font-weight: 600;
+  font-weight: lighter;
   margin-bottom: 25px;
   line-height: 70px;
 }
@@ -429,8 +432,14 @@ a:not([href]):not([tabindex]):hover {
   float: left;
   margin-right: 25px;
 }
+#features .box-items {
+  justify-content: center;
+}
 #features .box-item {
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 #features .box-item .icon {
   border: 1px solid #4676fa;
@@ -440,6 +449,7 @@ a:not([href]):not([tabindex]):hover {
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  align-self: center;
 }
 #features .box-item .icon i {
   color: #4676fa;
@@ -449,6 +459,7 @@ a:not([href]):not([tabindex]):hover {
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  margin: 18px;
 }
 #features .box-item .text h4 {
   font-weight: 600;
