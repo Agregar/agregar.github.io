@@ -23,7 +23,7 @@ function submitForm() {
         type: "POST",
         url: "https://agregar-public.azurewebsites.net/api/contact?code=rGcfahekukOyeZhaN1W6/GoafskLqllPEf9sVNWii5VYMBUD6anCFg==",
         contentType: "application/json",
-        data: JSON.stringify({ name: name, from: email, msg_subject: msg_subject, message: message }),
+        data: JSON.stringify({ name: name, from: email, msg_subject: msg_subject, body: message }),
         dataType: "text",
         success: function (text) {
             formSuccess();
