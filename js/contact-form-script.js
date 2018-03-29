@@ -37,7 +37,7 @@ function submitForm() {
 
 function formSuccess() {
     $("#contactForm")[0].reset();
-    submitMSG(true, "Message sent, we'll be in touch")
+    submitMSG(true, "Thanks! We'll be in touch")
 }
 
 function formError() {
