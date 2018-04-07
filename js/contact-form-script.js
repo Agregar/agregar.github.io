@@ -21,9 +21,9 @@ function submitForm() {
 
     $.ajax({
         type: "POST",
-        url: "https://prod-18.australiasoutheast.logic.azure.com:443/workflows/5ce213cf65654eaab7e917e42dd04ab0/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=TsgSV3atFiFIlAmHuGhNW2c1Ox0Y_jwyhInkudgsUtk",
+        url: "https://agregar-public.azurewebsites.net/api/contact?code=rGcfahekukOyeZhaN1W6/GoafskLqllPEf9sVNWii5VYMBUD6anCFg==",
         contentType: "application/json",
-        data: JSON.stringify({ name: name, email: email, msg_subject: msg_subject, message: message }),
+        data: JSON.stringify({ name: name, from: email, msg_subject: msg_subject, body: message }),
         dataType: "text",
         success: function (text) {
             formSuccess();
@@ -37,7 +37,7 @@ function submitForm() {
 
 function formSuccess() {
     $("#contactForm")[0].reset();
-    submitMSG(true, "Message sent, we'll be in touch")
+    submitMSG(true, "Thanks! We'll be in touch")
 }
 
 function formError() {
